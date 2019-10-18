@@ -1,18 +1,22 @@
 public class Calculator {
+	//Результат вычисления
+	private int result;
 
-	int x;
-	int y;
-
-	public int sum(int x, int y){
-		this.x = x;
-		this.y = y;
-		return (x + y);
+	//Суммируем аргументы
+	public void add(int ... params){
+		for (Integer param : params){
+			this.result += param;
+		}
 	}
 
-	public int diff(int x, int y){
-		this.x = x;
-		this.y = y;
-		return (x - y);
+	//Получить результат
+	public int getResult(){
+		return  this.result;
+	}
+
+	//Очистить результат вычисления
+	public void cleanResult(){
+		this.result = 0;
 	}
 
 }
