@@ -9,6 +9,21 @@ public class Calculator {
 		}
 	}
 
+	//Вычитаем аргументы
+	public void sub(int a, int b){
+			this.result = a - b;
+		}
+
+	//Умножаем аргументы
+	public void mult(int a, int b){
+			this.result = a * b;
+	}
+
+	//Делим аргументы
+	public void div(int a, int b){
+		this.result = a / b;
+	}
+
 	//Получить результат
 	public int getResult(){
 		return  this.result;
